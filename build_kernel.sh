@@ -14,12 +14,12 @@ git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1 $(pwd)/pr
 
 # change DEFCONFIG to you are defconfig name or device codename
 
-DEFCONFIG="vendor/x1q_kor_singlex_defconfig"
+DEFCONFIG="gale_defconfig"
 
 # you can set you name or host name(optional)
 
 export KBUILD_BUILD_USER="Sudoooo"
-export KBUILD_BUILD_HOST="Dark-Angel"
+export KBUILD_BUILD_HOST="idk"
 
 # do not modify TC_DIR and export PATCH it's been including with the proton-clang dir
 
