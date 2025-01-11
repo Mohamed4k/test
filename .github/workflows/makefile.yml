@@ -71,12 +71,3 @@ jobs:
         with:
           name: output_kernel
           path: AnyKernel3/*
-
-      # Send build notification
-      - name: Release build
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.CHANNEL_ID }}
-          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          message: Kernel is built! Check the artifact.
-          
