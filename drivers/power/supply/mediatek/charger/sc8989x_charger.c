@@ -3,6 +3,7 @@
 * Copyright (c) 2022 Southchip Semiconductor Technology(Shanghai) Co., Ltd.
 */
 
+#include <linux/seq_file.h>
 #include <linux/gpio.h>
 #include <linux/i2c.h>
 #include <linux/init.h>
