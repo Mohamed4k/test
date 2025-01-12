@@ -1,3 +1,4 @@
+#include <linux/seq_file.h>
 #include <linux/of.h>
 #include <linux/of_address.h>
 #include <linux/of_device.h>
