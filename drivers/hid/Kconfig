@@ -723,6 +723,7 @@ config HID_PETALYNX
 config HID_PICOLCD
 	tristate "PicoLCD (graphic version)"
 	depends on HID
+        select BACKLIGHT_CLASS_DEVICE
 	---help---
 	  This provides support for Minibox PicoLCD devices, currently
 	  only the graphical ones are supported.
