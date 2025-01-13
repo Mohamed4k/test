@@ -757,6 +757,7 @@ config HID_PICOLCD_BACKLIGHT
 	bool "Backlight control" if EXPERT
 	default !EXPERT
 	depends on HID_PICOLCD
+        select BACKLIGHT_CLASS_DEVICE
 	depends on HID_PICOLCD=BACKLIGHT_CLASS_DEVICE || BACKLIGHT_CLASS_DEVICE=y
 	---help---
 	  Provide access to PicoLCD's backlight control via backlight
