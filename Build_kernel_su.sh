@@ -11,15 +11,10 @@ git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1 $(pwd)/pr
 
 curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 
-            if grep -q "CONFIG_KSU" arch/arm64/configs/gale_defconfig; then
-                sed -i 's/# CONFIG_KSU is not set/CONFIG_KSU=y/g' arch/arm64/configs/gale_defconfig
-                sed -i 's/CONFIG_KSU=n/CONFIG_KSU=y/g' arch/arm64/configs/gale_defconfig
-            else
-                echo "CONFIG_KSU=y" >> arch/arm64/configs/gale_defconfig
-                
+
 # change DEFCONFIG to you are defconfig name or device codename
 
-DEFCONFIG="gale_defconfig"
+DEFCONFIG="gale_ksu_defconfig"
 
 # you can set you name or host name(optional)
 
