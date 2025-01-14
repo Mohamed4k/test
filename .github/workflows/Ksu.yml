@@ -35,7 +35,7 @@ jobs:
 
       # Set permissions
       - name: Set permissions
-        run: chmod +x build_kernel_su.sh
+        run: chmod +x Build_kernel_su.sh
         
 
       # Build kernel with debug mode
@@ -45,7 +45,7 @@ jobs:
           TELEGRAM_CHATID: ${{ secrets.TELEGRAM_CHATID }}
         run: |
           set -e
-          bash -x build_kernel_su.sh
+          bash -x Build_kernel_su.sh
 
       # Package kernel
       - name: Package kernel
