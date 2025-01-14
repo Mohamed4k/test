@@ -1,4 +1,4 @@
-name: Android Kernel
+name: Android Kernel ksu
 on:
   workflow_dispatch:
 
