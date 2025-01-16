@@ -12,7 +12,6 @@
 #include <linux/vmalloc.h>
 #include <linux/binfmts.h>
 #include <linux/delayacct.h>
-#include <linux/devfreq_boost.h>
 #include <linux/pid_namespace.h>
 #include <linux/cgroupstats.h>
 
