@@ -10,7 +10,6 @@
 #include <linux/magic.h>
 #include <linux/slab.h>
 #include <linux/vmalloc.h>
-#include <linux/binfmts.h>
 #include <linux/delayacct.h>
 #include <linux/pid_namespace.h>
 #include <linux/cgroupstats.h>
@@ -545,13 +544,6 @@ static ssize_t __cgroup1_procs_write(struct kernfs_open_file *of,
 	if (!ret)
 		cgroup_set_turbo_task(task);
 #endif
-
-	/* This covers boosting for app launches and app transitions */
-	if (!ret && !threadgroup &&
-	    !strcmp(of->kn->parent->name, "top-app") &&
-	    is_zygote_pid(task->parent->pid)) {
-		devfreq_boost_kick_max(DEVFREQ_MSM_CPUBW, 1250);
-	}
 
 out_finish:
 	cgroup_procs_write_finish(task);
