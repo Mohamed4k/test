@@ -7,7 +7,7 @@ sudo apt-get install clang-format clang-tidy clang-tools clang clangd libc++-dev
 
 sudo apt-get install gcc-aarch64-linux-gnu bc -y
 
-git clone https://gitlab.com/LeCmnGend/clang.git -b clang-18 --depth=1 $(pwd)/proton-clang
+git clone https://gitlab.com/LeCmnGend/proton-clang -b clang-15 --depth=1 $(pwd)/proton-clang
 
 curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 
